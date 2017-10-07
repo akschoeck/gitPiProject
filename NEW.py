@@ -5,6 +5,8 @@ SDI   = 4 #Data
 RCLK  = 5 #Latch
 SRCLK = 6 #Clock
 
+#test
+
 def print_msg():
 	print 'Program is running...'
 	print 'Please press Ctrl+C to end the program...'
