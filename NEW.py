@@ -6,6 +6,7 @@ RCLK  = 5 #Latch
 SRCLK = 6 #Clock
 
 #test
+#test2
 
 def print_msg():
 	print 'Program is running...'
