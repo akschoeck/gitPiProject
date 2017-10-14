@@ -5,9 +5,6 @@ SDI   = 4 #Data
 RCLK  = 5 #Latch
 SRCLK = 6 #Clock
 
-#test
-#test2
-
 def print_msg():
 	print 'Program is running...'
 	print 'Please press Ctrl+C to end the program...'
@@ -18,18 +15,12 @@ def setup():
 	GPIO.setup(SDI, GPIO.OUT)
 	GPIO.setup(RCLK, GPIO.OUT)
 	GPIO.setup(SRCLK, GPIO.OUT)
-	#GPIO.output(SDI, GPIO.LOW)
-	#GPIO.output(RCLK, GPIO.LOW)
-	#GPIO.output(SRCLK, GPIO.LOW)
 
 	GPIO.setup(12, GPIO.OUT)
 	GPIO.setup(13, GPIO.OUT)
-	#GPIO.output(12, GPIO.LOW)
-	#GPIO.output(13, GPIO.LOW)
 
 	for i in range(16, 27):
 		GPIO.setup(i, GPIO.OUT)
-		#GPIO.output(i, GPIO.LOW)
 		
 def loop():
 
@@ -122,13 +113,6 @@ def loop():
 		GPIO.output(6, GPIO.LOW) #Latch off
 		
 		time.sleep(1)
-
-		print('Test')
-		'''
-		GPIO.output(26, GPIO.HIGH)
-		time.sleep(.5)
-		GPIO.output(26, GPIO.LOW)
-		'''
 
 
 def destroy():   # When program ending, the function is executed. 
